@@ -1,0 +1,68 @@
+.container {
+  margin: 0 auto;
+  max-width: 995px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+h3 {
+  float: right;
+  padding: 5px 6px;
+  margin: 0px 0px;
+  background: rgb(255, 115, 115);
+  border-bottom: 3px black solid;
+  border-left: 3px black solid;
+}
+
+p {
+  padding: 30px 10px;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 28%;
+  height: fit-content;
+  margin-top: 60px;
+  background: rgb(243, 237, 160);
+  border: 4px black solid;
+  margin-left: 25px;
+  display: inline-block;
+}
+.card2 h3 {
+  background: rgb(213, 213, 230);
+}
+.card3 h3 {
+  background: rgb(194, 243, 102);
+}
+
+/*=====================
+responive for Tab
+=====================*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card1,
+  .card2 {
+    width: 44%;
+    height: fit-content;
+  }
+  .card3 {
+    width: 92%;
+    height: fit-content;
+    align-items: center;
+  }
+}
+
+/*=====================
+responive for Moile
+=====================*/
+
+@media screen and (max-width: 767px) {
+  .card1,
+  .card2,
+  .card3 {
+    width: 87%;
+  }
+}
